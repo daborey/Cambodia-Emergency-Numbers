@@ -1,0 +1,200 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for better contrast */
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Main heading */
+h1, h2 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #e53935; /* Emergency Red */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for separation */
+}
+
+/* Table Header Styling */
+th {
+    background-color: #e53935; /* Urgent red */
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+/* Table Rows */
+tr:nth-child(even) {
+    background-color: #ffebeb; /* Light red for alternate rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffe5e5; /* Slightly darker red for odd rows */
+}
+
+/* Table Cells */
+th, td {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Emergency Numbers Styling */
+td div {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Highlighting Emergency Numbers in Red */
+td div span {
+    color: #e53935; /* Highlighting critical numbers */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Hyperlinks */
+a {
+    color: #e53935; /* Red for links to emphasize urgency */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d32f2f; /* Darker red when hovered */
+    text-decoration: underline;
+}
+
+/* Emergency Button (Call-to-action) */
+button {
+    display: inline-block;
+    background-color: #e53935; /* Red for urgency */
+    color: #fff;
+    font-size: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f; /* Darker red when hovered */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #e53935;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Footer Text */
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 12px 18px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 18px 0;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px 12px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 15px 0;
+    }
+}
+
+/* Accessibility Features for Visually Impaired */
+h1, h2 {
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+table, footer {
+    border-radius: 5px;
+}
+
+/* Increased contrast for better readability */
+th, td, footer {
+    color: #ffffff;
+}
